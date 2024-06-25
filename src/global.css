@@ -53,6 +53,15 @@
 @layer base {
   * {
     @apply border-border;
+
+    ::-webkit-scrollbar {
+      width: 0.35rem;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #bbbbbb;
+      border-radius: 999px;
+    }
   }
   body {
     @apply bg-background text-foreground;
