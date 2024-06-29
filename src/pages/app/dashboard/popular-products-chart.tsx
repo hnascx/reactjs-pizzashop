@@ -2,13 +2,7 @@ import { BarChart } from 'lucide-react'
 import { Cell, Pie, PieChart, ResponsiveContainer } from 'recharts'
 import colors from 'tailwindcss/colors'
 
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 
 const data = [
   { product: 'Mussarela', amount: 30 },
@@ -28,7 +22,7 @@ const COLORS = [
 
 export function PopularProductsChart() {
   return (
-    <Card className="col-span-3 bg-inherit">
+    <Card className="col-span-3">
       <CardHeader className="pb-8">
         <div className="flex items-center justify-between">
           <CardTitle className="text-base font-medium">
