@@ -4,6 +4,7 @@ import { Building, ChevronDown, LogOut } from 'lucide-react'
 import { getManagedRestaurant } from '@/api/get-managed-restaurant'
 import { getProfile } from '@/api/get-profile'
 
+import { StoreProfileDialog } from './store-profile-dialog'
 import { Button } from './ui/button'
 import { Dialog, DialogTrigger } from './ui/dialog'
 import {
@@ -73,6 +74,8 @@ export function AccountMenu() {
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
+
+      <StoreProfileDialog />
     </Dialog>
   )
 }
