@@ -46,7 +46,9 @@ export function SignIn() {
         },
       })
     } catch {
-      toast.error('Enviamos um link de autenticação para seu e-mail.')
+      toast.error(
+        'Não foi possível enviar o link de autenticação para seu e-mail.',
+      )
     }
   }
 
