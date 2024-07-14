@@ -1,11 +1,32 @@
 {
-  "files": [],
-  "references": [
-    {
-      "path": "./tsconfig.app.json"
+  "compilerOptions": {
+    "target": "es2022",
+    "useDefineForClassFields": true,
+    "lib": ["es2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noFallthroughCasesInSwitch": true,
+
+    // Shadcn ui
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
     },
-    {
-      "path": "./tsconfig.node.json"
-    }
-  ]
+
+    //vitest
+    "types": ["vitest/globals"]
+  },
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }
