@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:test": "vite --port 5078 --mode test",
     "build": "tsc -b && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
@@ -55,6 +56,7 @@
     "eslint-plugin-simple-import-sort": "^12.1.0",
     "happy-dom": "^14.12.3",
     "init": "^0.1.2",
+    "msw": "^2.3.1",
     "npx": "^10.2.2",
     "postcss": "^8.4.38",
     "prettier-plugin-tailwindcss": "^0.6.5",
@@ -62,5 +64,10 @@
     "typescript": "^5.2.2",
     "vite": "^5.3.1",
     "vitest": "^1.6.0"
+  },
+  "msw": {
+    "workerDirectory": [
+      "public"
+    ]
   }
 }
